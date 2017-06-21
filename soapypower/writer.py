@@ -178,7 +178,8 @@ class RtlPowerWriter(BaseWriter):
         try:
             step = f_array[1] - f_array[0]
             row = [
-                time_stop.strftime('%Y-%m-%d'), time_stop.strftime('%H:%M:%S'),
+                # time_stop.strftime('%Y-%m-%d'), time_stop.strftime('%H:%M:%S'),
+                time_start, time_stop,
                 f_array[0], f_array[-1] + step, step, samples
             ]
             row += list(pwr_array)
